@@ -23,3 +23,17 @@ node {
 		 }
 	 }
  }
+ post{
+	 always{
+		 echo "It will run always"
+	 }
+	 success{
+		 echo "i run when success"
+	 }
+	 failure{
+		 echo "i execute when it fails"
+	 }
+	 changed{
+		 echo "This will change when change in some build like build jenckis 4 and next build 5 have some diff"
+	 }
+ }
